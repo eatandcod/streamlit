@@ -1,4 +1,9 @@
-streamlit
-inference_sdk
-tensorflow
-joblib
+streamlit==0.82.0
+inference-sdk==1.0.0
+tensorflow==2.4.1
+opencv-python==4.5.1.48
+numpy==1.19.5
+Pillow==8.2.0
+matplotlib==3.4.2
+joblib==1.0.1
+
