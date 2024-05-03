@@ -1,3 +1,4 @@
 streamlit
 inference_sdk
 tensorflow
+joblib
