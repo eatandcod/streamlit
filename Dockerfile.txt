@@ -15,7 +15,11 @@ RUN pip install tensorflow
 RUN pip install joblib
 
 # Make port 8501 available to the world outside this container
-EXPOSE 8501
+EXPOSE 8501 
+# Copy the model files into the container
+COPY C:\Users\azra.nisar\Downloads\CNN Code (1)\CNN Code\svm_fire.pkl
+COPY C:\Users\azra.nisar\Downloads\CNN Code (1)\CNN Code\fire_detection_model.h5
+COPY C:\Users\azra.nisar\Downloads\CNN Code (1)\CNN Code\wildfire_random_forest_model.pkl
 
 # Run the Streamlit app when the container launches
 CMD ["streamlit", "run", "app2.py"]
